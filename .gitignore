@@ -1,7 +1,8 @@
 Calendário.pdf
 desktop.ini
-AULA07-15-03-2022\meu_ambiente\
-AULA07-15-03-2022\pacote\
-AULA08-17-03-2022\ambiente_bootcamp\
-AULA08-17-03-2022\pacote\
+ENCONTRO07-15-03-2022\meu_ambiente\
+ENCONTRO08-17-03-2022\ambiente_bootcamp\
 *.pyc
+**/__pycache__/
+__pycache__/
+__pycache__
