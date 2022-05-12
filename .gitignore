@@ -7,3 +7,5 @@ ENCONTRO08-17-03-2022/ambiente_bootcamp/
 __pycache__/
 __pycache__
 Materiais/
+**/venv/
+**/.venv/
