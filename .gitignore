@@ -9,3 +9,5 @@ __pycache__
 Materiais/
 **/venv/
 **/.venv/
+**/.vscode/
+**/.pytest_cache/
