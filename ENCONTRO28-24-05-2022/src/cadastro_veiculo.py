@@ -1,25 +1,12 @@
-from src.veiculo import Veiculo
+from src.cadastro_abstract import CadastroAbstract
 
 
-class CadastroVeiculo():
-
+class CadastroVeiculo(CadastroAbstract):
+    
     def __init__(self) -> None:
+        super().__init__()
         self.__lista = []
-
-    def inserir(self, entity):
-        self.__lista.append(entity)
-        return True
-
-    def consultar(self, id):
-        lista = list(filter(lambda x: x.id == id, self.__lista))
-        if len(lista) > 0:
-            return lista[0]
-
-    def remover_por_id(self, id):
-        try:
-            veiculo = self.consultar(id)
-            self.__lista.remove(veiculo)
-        except Exception as ex:
-            raise ex
-        else:
-            return True
+    
+    @property
+    def lista(self):
+        return self.__lista
