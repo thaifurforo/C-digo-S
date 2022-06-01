@@ -1,6 +1,9 @@
-class Entity():
-    def __init__(self, id: str) -> None:
+from abc import ABC, abstractmethod
 
+
+class Entity(ABC):
+    
+    def __init__(self, id: str) -> None:
         if type(id) is str:
             self.__id = id
         else:

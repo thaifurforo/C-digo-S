@@ -1,4 +1,7 @@
-class CadastroAbstract:
+from abc import ABC, abstractmethod
+
+
+class CadastroAbstract(ABC):
     def __init__(self) -> None:
         self.__lista = []
 
@@ -13,16 +16,16 @@ class CadastroAbstract:
 
     def remover_por_id(self, id):
         try:
-            veiculo = self.consultar(id)
-            self.__lista.remove(veiculo)
+            entitiy = self.consultar(id)
+            self.__lista.remove(entitiy)
         except Exception as ex:
             raise ex
         else:
             return True
 
-    def remover_por_entidade(self, veiculo):
+    def remover_por_entidade(self, entitiy):
         try:
-            self.__lista.remove(veiculo)
+            self.__lista.remove(entitiy)
         except Exception as ex:
             raise ex
         else:

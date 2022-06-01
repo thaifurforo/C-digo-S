@@ -1,8 +1,9 @@
 from src.entity import Entity
 
+
 class Veiculo(Entity):
     def __init__(self, id: str, placa: str, km: float) -> None:
-        
+
         super().__init__(id)
 
         if type(placa) is str:
