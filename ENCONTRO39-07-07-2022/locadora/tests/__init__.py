@@ -1,0 +1,1 @@
+from locadora.tests.test_client_testcase import *

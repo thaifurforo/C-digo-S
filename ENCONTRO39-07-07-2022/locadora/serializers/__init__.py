@@ -1,0 +1,1 @@
+from locadora.serializers.cliente_serializer import *

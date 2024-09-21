@@ -1,0 +1,1 @@
+from locadora.models.cliente import *
